@@ -1,0 +1,32 @@
+<div class="card">
+
+    <div class="content" (click)="verReverso = !verReverso"
+        [ngClass]="{ 'checked': verReverso }">
+        
+        <div class="front"
+            [ngStyle]="{'background-image':'url(' + mesa.pathImagen + ')'}">
+            
+            <div class="borde-superior-nombre"></div>
+            <div class="nombre-mesa">
+                {{ mesa.nombre }}
+            </div>
+    
+        </div>
+    
+        <div class="back">
+    
+            <div class="tarjeta-reverso-container">
+    
+                <div class="item-invitado" *ngFor="let invitado of mesa.vInvitados">
+                    {{ invitado.nombre }}
+                </div>
+                <!-- <div class="item-invitado">
+                    Proximamente...
+                </div> -->
+    
+            </div>
+    
+        </div>
+
+    </div>
+</div>

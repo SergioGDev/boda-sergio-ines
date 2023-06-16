@@ -1,0 +1,581 @@
+.titulo-ubicaciones {
+    width: 100%;
+    height: 300px;
+    background-image: url(../../../assets/foto-parador-2.jpeg);
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Comic Book Font', cursive;
+}
+
+.titulo-ubicaciones .cortina {
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+}
+
+.titulo-ubicaciones .cortina .texto-titulo {
+    color: white;
+    text-shadow: 2px 2px 3px #ffffff80;
+    font-size: 50pt;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ubicacion-iglesia .ubicacion-parador {
+    height: 500px;
+}
+
+.descripcion.iglesia {
+    height: 365px;
+    display: flex;
+    min-width: 100%;
+}
+
+.descripcion.parador {
+    height: 300px;
+}
+
+#mapaIglesia, #mapaParador, #mapaParador2 {
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion.iglesia {
+    background-image: url(../../../assets/santuario-puerto-1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    z-index: 10;
+    box-shadow: 2px 2px 4px #00000050;
+}
+
+.descripcion.parador {
+    background-image: url(../../../assets/foto-parador-1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    z-index: 9;
+    box-shadow: -2px -1px 4px #00000050;
+}
+
+.descripcion .cortina {
+    font-family: 'Comic Book Font', cursive;
+    font-size: 18pt;
+    background-color: #FFFFFFC0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.descripcion .cortina .linea-texto {
+    margin: 5px 0px;
+}
+
+.descripcion.parador .cortina .linea-texto {
+    margin: 5px;
+}
+
+.descripcion .cortina .como-llegar {
+    margin: 20px 0px;
+    border: 1px solid var(--tono1);
+    padding: 15px 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #00000050;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.descripcion .cortina .como-llegar:hover {
+    background-color: var(--tono5-transparente);
+    border: 1px solid var(--tono1);
+    color: var(--tono1);
+    transform: translateY(-3px) scale(1.02);
+    transition: 0.3s;
+}
+
+/**********************************************/
+/*                  HOJA COMIC                */
+/**********************************************/
+.container-hoja-comic {
+    background-image: url(../../../assets/fondo-comic-vinnetas.jpeg);
+}
+
+.cortina-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffF0;
+}
+
+.hoja-comic {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 450px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fffdf5;
+    box-shadow: 2px 2px 10px #000000;
+}
+
+/* Primera fila */
+.primera-fila {
+    height: 400px;
+    width: calc(100% - 60px);
+    margin: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.primera-fila .vinneta-uno,
+.primera-fila .vinneta-uno .contenido {
+    clip-path: polygon(0 0, 100% 0, 100% 85.4%, 0 100%);
+}
+
+.primera-fila .vinneta-uno {
+    background-color: black;
+    flex-grow: 6;
+    position: relative;
+}
+
+.primera-fila .vinneta-uno .contenido {
+    position: absolute;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+.primera-fila .vinneta-dos,
+.primera-fila .vinneta-dos .contenido {
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 84.5%);
+}
+
+.primera-fila .vinneta-dos {
+    background-color: black;
+    flex-grow: 4;
+    position: relative;
+
+}
+
+.primera-fila .vinneta-dos .contenido {
+    position: absolute;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+/* Segunda fila */
+.segunda-fila {
+    height: 350px;
+    margin: -100px 30px 30px 30px;
+    width: calc(100% - 60px);
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.segunda-fila .vinneta-uno,
+.segunda-fila .vinneta-uno .contenido {
+    clip-path: polygon(0 100px, 100% 9%, 100% 100%, 0 100%);
+}
+
+.segunda-fila .vinneta-uno {
+    background-color: black;
+    flex-grow: 7;
+    position: relative;
+}
+
+.segunda-fila .vinneta-uno .contenido {
+    position: absolute;
+    background-image: url(../../../assets/thanos-infinity-war.jpeg);
+    background-position: center center;
+    background-size: cover;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+.segunda-fila .vinneta-uno .bocadillo {
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    background-color: white;
+    width: 230px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Comic Book Font', cursive;
+}
+
+.segunda-fila .vinneta-uno .bocadillo div:first-child {
+    font-size: 12pt;
+}
+
+.segunda-fila .vinneta-uno .bocadillo div:last-child {
+    font-size: 18pt;
+}
+
+.segunda-fila .vinneta-uno .bocadillo:before {
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: 75px;
+    right: -6px;
+    transform: rotate(60deg);
+    background: white;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    width: 20px;
+    height: 50px;
+}
+
+.segunda-fila .vinneta-dos,
+.segunda-fila .vinneta-dos .contenido {
+    clip-path: polygon(0 8.5%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.segunda-fila .vinneta-dos {
+    background-color: black;
+    flex-grow: 3;
+    position: relative;
+}
+
+.segunda-fila .vinneta-dos .contenido {
+    position: absolute;
+    background-image: url(../../../assets/thanos-snap.jpeg);
+    background-position: center bottom;
+    background-size: cover;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+/* Tercera fila */
+.tercera-fila {
+    height: 75px;
+    text-align: center;
+    margin: 0px 30px 30px 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tercera-fila .contenido {
+    font-size: 30pt;
+    font-family: 'Comic Book Font', cursive;
+}
+
+/* Cuarta fila */
+.cuarta-fila {
+    height: 300px;
+    width: 100%;
+    margin: 0px 30px 30px 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuarta-fila .vinneta-uno {
+    position: relative;
+    flex-grow: 4;
+    border: 2px solid black;
+    height: 100%;
+}
+
+.cuarta-fila .vinneta-uno .contenido {
+    position: absolute;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+.cuarta-fila .vinneta-dos {
+    flex-grow: 4;
+    border: 2px solid black;
+    height: 100%;
+}
+
+/**********************************************/
+
+@media (max-width: 595px) {
+
+    /* Primera fila */
+    .primera-fila {
+        height: 600px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 580px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+
+    .primera-fila .vinneta-uno,
+    .primera-fila .vinneta-uno .contenido {
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    }
+
+    .primera-fila .vinneta-uno {
+        background-color: black;
+        flex-grow: 1;
+        position: relative;
+    }
+
+    .primera-fila .vinneta-uno .contenido {
+        position: absolute;
+        background-color: white;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+
+    .primera-fila .vinneta-dos,
+    .primera-fila .vinneta-dos .contenido {
+        clip-path: polygon(0 86px, 100% 0, 100% 100%, 0 80%);
+    }
+
+    .primera-fila .vinneta-dos {
+        background-color: black;
+        flex-grow: 1;
+        position: relative;
+        margin-top: -80px;
+    }
+
+    .primera-fila .vinneta-dos .contenido {
+        position: absolute;
+        background-color: white;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+
+    /* Segunda fila */
+    .segunda-fila {
+        height: 1000px;
+        margin: -66px 10px 10px 10px;
+        width: calc(100% - 20px);
+        clip-path: polygon(0 0, 100% 70px, 100% 100%, 0 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .segunda-fila .vinneta-uno,
+    .segunda-fila .vinneta-uno .contenido {
+        clip-path: polygon(0 0, 100% 70px, 100% 100%, 0 100%);
+    }
+
+    .segunda-fila .vinneta-uno {
+        background-color: black;
+        flex-grow: 3;
+        position: relative;
+    }
+
+    .segunda-fila .vinneta-uno .contenido {
+        position: absolute;
+        background-image: url(../../../assets/thanos-infinity-war.jpeg);
+        background-position: center center;
+        background-size: cover;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+
+    .segunda-fila .vinneta-uno .bocadillo {
+        position: absolute;
+        top: 290px;
+        left: 15px;
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Comic Book Font', cursive;
+    }
+
+    .segunda-fila .vinneta-uno .bocadillo div:first-child {
+        font-size: 12pt;
+    }
+
+    .segunda-fila .vinneta-uno .bocadillo div:last-child {
+        font-size: 16pt;
+    }
+
+    .segunda-fila .vinneta-uno .bocadillo:before {
+        position: absolute;
+        bottom: 71px;
+        right: 9px;
+        transform: rotate(30deg);
+    }
+
+    .segunda-fila .vinneta-dos,
+    .segunda-fila .vinneta-dos .contenido {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    .segunda-fila .vinneta-dos {
+        background-color: black;
+        flex-grow: 4;
+        position: relative;
+    }
+
+    .segunda-fila .vinneta-dos .contenido {
+        position: absolute;
+        background-image: url(../../../assets/thanos-snap.jpeg);
+        background-position: center bottom;
+        background-size: cover;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+
+    /* Tercera fila */
+    .tercera-fila {
+        height: 100px;
+        margin: 10px 10px 30px 10px;
+        width: calc(100% - 20px);
+    }
+
+    .tercera-fila .contenido {
+        font-size: 25pt;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+
+    /* Cuarta fila */
+    .cuarta-fila {
+        height: 600px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .cuarta-fila .vinneta-uno,
+    .cuarta-fila .vinneta-uno .contenido {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+    }
+
+    .cuarta-fila .vinneta-uno {
+        background-color: black;
+        border: none;
+        flex-grow: 4;
+        position: relative;
+        width: 100%;
+    }
+
+    .cuarta-fila .vinneta-uno .contenido {
+        position: absolute;
+        background-color: white;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+
+    .cuarta-fila .vinneta-dos,
+    .cuarta-fila .vinneta-dos .contenido {
+        clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+    }
+
+    .cuarta-fila .vinneta-dos {
+        background-color: black;
+        flex-grow: 6;
+        position: relative;
+        border: none;
+        width: calc(100% - 4px);
+        margin-top: -140px;
+    }
+
+    .cuarta-fila .vinneta-dos .contenido {
+        position: absolute;
+        background-color: white;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+    }
+    
+    /* Otros */
+    .descripcion.iglesia {
+        height: 330px;
+    }
+
+    .descripcion.parador {
+        height: 400px;
+    }
+
+    .descripcion.parador .cortina {
+        padding-top: 75px;
+    }
+
+    .descripcion.iglesia .cortina {
+        padding-bottom: 40px;
+    }
+
+    .ubicacion-iglesia, .ubicacion-parador {
+        height: 200px;
+    }
+
+    .titulo-ubicaciones {
+        height: 300px;
+    }
+
+    .titulo-ubicaciones .cortina .texto-titulo {
+        font-size: 30pt;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .descripcion .cortina {
+        font-size: 14pt;
+    }
+}

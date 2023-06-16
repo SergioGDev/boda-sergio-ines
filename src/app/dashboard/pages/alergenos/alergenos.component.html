@@ -1,0 +1,86 @@
+<div class="container-ubicaciones">
+
+    <div class="titulo-ubicaciones">
+        <div class="cortina">
+            <div class="texto-titulo">
+                Alérgenos
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-hoja-comic">
+        <div class="cortina-container">
+            <div class="hoja-comic">
+
+                <div class="vinneta">
+
+                    <div class="fila">
+                        Sabemos que cada invitado es especial y queremos asegurarnos de que disfruten al máximo de
+                        la celebración sin preocupaciones. Por lo tanto, para garantizar la seguridad de todos nuestros
+                        invitados, necesitamos que nos informen sobre cualquier intolerancia y/o alergia alimentaria que tengan.
+                        Así evitaremos que el mal triunfe sobre nosotros y podamos disfrutar de La Boda del Infinito.
+                    </div>
+
+                    <div class="fila">
+                        Así que, si eres tan amable, indícanos tu nombre y apellidos y las intolerancias y/o alergias rellenando los datos
+                        en el formulario de abajo. ¡Muchas gracias!
+                    </div>
+
+                    <div class="fila">
+                        P.D.: En aras de hacer esta sección un poco seria, por favor abstenerse de rellenar datos para
+                        gente como Rosa Melano, Benito Camelo o similar.
+                    </div>
+
+                </div>
+
+                <div class="vinneta">
+
+                    <form (submit)="onSubmit()" [formGroup]="alergenosForm">
+
+                        <div>
+                            <label for="nombre">Nombre y Apellidos</label>
+                            <input id="nombre" type="text" formControlName="nombre" placeholder="Nombre y Apellidos"
+                                class="form-control" maxlength="100" />
+                        </div>
+
+                        <div class="error">
+                            <span class="error"
+                                *ngIf="alergenosForm.get('nombre')!.hasError('required') && alergenosForm.get('nombre')!.touched">*
+                                El nombre es obligatorio</span>
+                            <span class="error"
+                                *ngIf="alergenosForm.get('nombre')!.hasError('maxlength') && alergenosForm.get('nombre')!.touched">*
+                                El nombre no puede tener más de 100 caracteres</span>
+                        </div>
+
+                        <div>
+                            <label for="descripcion">Intolerancias y/o Alergias</label>
+                            <textarea id="descripcion" formControlName="descripcion"
+                                placeholder="Cuéntanos tus intolerancias y/o alergias alimentarias..." rows="6" maxlength="1000">
+
+                            </textarea>
+                        </div>
+
+                        <div class="error">
+                            <span class="error"
+                                *ngIf="alergenosForm.get('descripcion')!.hasError('required') && alergenosForm.get('descripcion')!.touched">*
+                                La descripción de las alergias e intolerancias es obligatoria</span>
+                            <span class="error"
+                                *ngIf="alergenosForm.get('descripcion')!.hasError('maxlength') && alergenosForm.get('descripcion')!.touched">*
+                                La descripción de las alergias e intolerancias no puede tener más de 1000 caracteres</span>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn-enviar-alergenos">Enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

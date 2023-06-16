@@ -1,0 +1,65 @@
+[{
+  "_id": "62f849ec147ca492befee5ef",
+  "nombre": "Ironman",
+  "pathImagen": "https://gcdn.lanetaneta.com/wp-content/uploads/2022/04/Marvels-Avengers-agrega-armadura-nanotecnologica-de-Iron-Man-Infinity-War.jpeg"
+},{
+  "_id": "62f849ec147ca492befee5f0",
+  "nombre": "Doctor Strange",
+  "pathImagen": "https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2022/04/13/doctor-strange-en-el-multiverso-de-la-locura.jpeg"
+},{
+  "_id": "62f849ec147ca492befee5f3",
+  "nombre": "Ojo de Halcón",
+  "pathImagen": "https://www.direct8.fr/wp-content/uploads/2021/11/hawkeye-680x1024.jpg"
+},{
+  "_id": "62f849ec147ca492befee5ee",
+  "nombre": "Spiderman",
+  "pathImagen": "https://sm.ign.com/t/ign_es/news/s/spider-man/spider-man-no-way-home-swings-to-a-record-breaking-253-milli_qv9s.1200.jpg"
+},{
+  "_id": "62f849ec147ca492befee5f4",
+  "nombre": "Thor",
+  "pathImagen": "https://www.cinemascomics.com/wp-content/uploads/2020/10/thor-chris-hemswoth-wallpapper.jpg"
+},{
+  "_id": "62f849ec147ca492befee5f5",
+  "nombre": "Capitan América",
+  "pathImagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2019/05/hipertextual-avengers-endgame-futuro-capitan-america-2019781893-scaled.jpg?fit=2560%2C1600&quality=50&strip=all&ssl=1"
+},{
+  "_id": "62f849ec147ca492befee5f6",
+  "nombre": "Bruja Escarlata",
+  "pathImagen": "https://i.etsystatic.com/27580897/r/il/01119a/2968733557/il_fullxfull.2968733557_faia.jpg"
+},{
+  "_id": "62f849ec147ca492befee5f7",
+  "nombre": "Capitana Marvel",
+  "pathImagen": "https://fotografias.flooxernow.com/clipping/cmsimages01/2019/03/07/E216D01F-C1FE-4316-8BF0-8E970697D4F8/98.jpg?crop=1339,753,x0,y7&width=1900&height=1069&optimize=high&format=webply"
+},{
+  "_id": "62f849ec147ca492befee5f1",
+  "nombre": "Hulk",
+  "pathImagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2017/05/hulk-25-curiosidades-gigante-esmeralda-marvel_0.jpg?itok=IurD0-s_"
+},{
+  "_id": "62f849ec147ca492befee5f2",
+  "nombre": "Viuda Negra",
+  "pathImagen": "https://www.cinemascomics.com/wp-content/uploads/2012/04/Scarlett-Johansson-cinemascomics.jpg"
+},{
+  "_id": "62f84a62147ca492befee602",
+  "nombre": "Rocket",
+  "pathImagen": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2020/12/614a86c8-405f-4fd8-b60d-93998c769661.sized-1000x1000.jpg"
+},{
+  "_id": "62f84db1147ca492befee607",
+  "nombre": "Antman",
+  "pathImagen": "https://i.pinimg.com/originals/12/8b/8e/128b8eb95bf7ff155b629a98522afbcf.jpg"
+},{
+  "_id": "62f84db1147ca492befee606",
+  "nombre": "Daredevil",
+  "pathImagen": "https://fotografias.antena3.com/clipping/cmsimages01/2018/07/30/E65DBF13-1C15-41A0-9070-EF6D8AA2B382/98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=high&format=webply"
+},{
+  "_id": "62f84db1147ca492befee608",
+  "nombre": "Black Panther",
+  "pathImagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/02/black-panther.jpg?itok=GSdCBsjK"
+},{
+  "_id": "6332166d88a60f3518cc24c7",
+  "nombre": "Groot",
+  "pathImagen": "https://i.pinimg.com/originals/b9/ae/fb/b9aefb2c59ca7cfe1f0382d643e938ba.jpg"
+},{
+  "_id": "6332179c88a60f3518cc24d9",
+  "nombre": "Star Lord",
+  "pathImagen": "https://akns-images.eonline.com/eol_images/Entire_Site/20201114/rs_1200x1200-201214124949-1200-Chris_Pratt-Guardians_Of_The_Galaxy_-_2014.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top"
+}]

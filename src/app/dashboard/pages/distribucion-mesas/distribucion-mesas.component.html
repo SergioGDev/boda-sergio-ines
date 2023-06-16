@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="titulo-distribucion-mesas">
+    <div class="cortina">
+      <div class="texto-titulo">Distribución de invitados</div>
+    </div>
+  </div>
+
+  <div class="spinner-carga" *ngIf="vMesas.length === 0">
+    <app-spinner-carga></app-spinner-carga>
+  </div>
+
+  <div *ngIf="vMesas.length > 0">
+    <app-input-busqueda
+      (eventoBusqueda)="aplicarBusqueda($event)"
+    ></app-input-busqueda>
+  </div>
+
+  <div class="container-hoja-comic" *ngIf="textoBusqueda.trim() === ''">
+    <div class="hoja-comic">
+      <div class="vinneta">
+        <div class="fila">
+          ¡Tu lugar especial te espera en la Boda del Infinito! Utiliza el
+          buscador para encontrar rápidamente tu mesa y comenzar a disfrutar de
+          la compañía de los demás invitados.<br /><br />(Nota: La distribución de las
+          mesas es provisional y hasta la misma semana no se confirmará al 100%)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-tarjetas-grande" *ngIf="vMesas.length > 0">
+    <div class="container-tarjetas">
+      <div class="content-tarjeta" *ngFor="let mesa of vMesasMostradas">
+        <app-tarjeta [mesa]="mesa"></app-tarjeta>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fondo">
+  <div class="cortina"></div>
+</div>

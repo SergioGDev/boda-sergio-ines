@@ -1,0 +1,27 @@
+<div class="container-ubicaciones">
+
+    <div class="titulo-ubicaciones">
+        <div class="cortina">
+            <div class="texto-titulo">
+                Listado de Alérgenos
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-hoja-comic">
+        <div class="cortina-container">
+            <div class="hoja-comic">
+
+                <div class="vinneta" *ngFor="let item of listadoAlergenos">
+                    <div class="nombre">
+                        {{item.nombre}}
+                    </div>
+                    <div class="descripcion">
+                        {{item.descripcion}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
